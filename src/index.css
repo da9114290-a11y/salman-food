@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #D62300;
+  --color-brand-yellow: #FFC72C;
+  --color-brand-dark: #1A1A1A;
+  --color-brand-light: #FFFDF9;
+  --color-brand-muted: #6B6B6B;
+  --color-brand-border: #E8E0D5;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-red-hover: #B01D00;
+  --color-brand-yellow-hover: #E6B325;
+
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-accent: "Bebas Neue", sans-serif;
+
+  --radius-brand: 4px;
+  --radius-card: 12px;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 40px rgba(0,0,0,0.14);
+  --shadow-red: 0 4px 20px rgba(214,35,0,0.25);
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+
+  --animate-fade-up: fadeUp 0.5s ease forwards;
+  --animate-slide-in: slideIn 0.4s ease forwards;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-brand-light text-brand-dark font-body;
+  }
+
+  ::selection {
+    @apply bg-brand-yellow text-brand-dark;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-brand-red rounded-full;
+  }
+
+  /* Touch improvements */
+  * { 
+    -webkit-tap-highlight-color: transparent; 
+    touch-action: manipulation; 
+  }
+  
+  input, button, select, textarea { 
+    font-size: 16px; 
+  } /* prevent iOS zoom on focus */
+
+  /* Safe area for notched phones */
+  .navbar { 
+    padding-top: env(safe-area-inset-top); 
+  }
+  
+  .cart-sidebar { 
+    padding-top: env(safe-area-inset-top); 
+    padding-bottom: env(safe-area-inset-bottom); 
+  }
+  
+  .sticky-order-btn { 
+    bottom: calc(24px + env(safe-area-inset-bottom)); 
+  }
+
+  /* Smooth momentum scrolling on iOS */
+  .scrollable { 
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  /* Prevent text selection on interactive elements */
+  .no-select { 
+    -webkit-user-select: none; 
+    user-select: none; 
+  }
+
+  /* Better font rendering */
+  body { 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    text-rendering: optimizeLegibility; 
+  }
+}
+
