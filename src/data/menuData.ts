@@ -201,17 +201,6 @@ export const menuItems: MenuItem[] = [
     rating: 4.3,
     reviewCount: 450
   },
-  {
-    id: 's3',
-    name: 'Onion Rings',
-    description: 'Crispy batter-fried onion circles with dipping sauce',
-    price: 250,
-    category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1601004176214-7f154446f251?w=800&q=80',
-    calories: 320,
-    rating: 4.4,
-    reviewCount: 320
-  },
 
   // DRINKS
   {
@@ -282,15 +271,4 @@ export const menuItems: MenuItem[] = [
     rating: 4.6,
     reviewCount: 1200
   },
-  {
-    id: 'des3',
-    name: 'Apple Pie',
-    description: 'Flaky pastry crust filled with hot spiced apples',
-    price: 200,
-    category: 'Desserts',
-    image: 'https://images.unsplash.com/photo-1568571780765-9276ac4b7fcb?w=800&q=80',
-    calories: 320,
-    rating: 4.5,
-    reviewCount: 180
-  }
 ];
