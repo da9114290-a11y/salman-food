@@ -121,7 +121,7 @@ export const HeroSection = () => {
           className="absolute top-[15%] right-[10%] w-48 h-48 rounded-full border-4 border-white/20 overflow-hidden shadow-2xl"
         >
           <img
-            src="https://images.unsplash.com/photo-1626645738196-c2a7c8d08f58?w=400&q=80"
+            src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800&q=80"
             alt="Fried Chicken"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -137,7 +137,7 @@ export const HeroSection = () => {
           className="absolute top-[50%] right-[3%] w-40 h-40 rounded-full border-4 border-white/20 overflow-hidden shadow-2xl"
         >
           <img
-            src="https://images.unsplash.com/photo-1573016608244-7d5fd1fb9fe8?w=400&q=80"
+            src="https://images.unsplash.com/photo-1573016608244-7d5fd1fb9fe8?w=600&q=80"
             alt="French Fries"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

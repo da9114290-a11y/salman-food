@@ -14,7 +14,7 @@ export const menuItems: MenuItem[] = [
     price: 650, 
     originalPrice: 750, 
     category: 'Burgers', 
-    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80', 
     badge: 'Bestseller', 
     isSpicy: true, 
     calories: 620, 
@@ -27,7 +27,7 @@ export const menuItems: MenuItem[] = [
     description: 'Two smashed beef patties, cheddar cheese, pickles, special sauce', 
     price: 750, 
     category: 'Burgers', 
-    image: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&q=80', 
     badge: 'New', 
     calories: 780, 
     rating: 4.7, 
@@ -39,7 +39,7 @@ export const menuItems: MenuItem[] = [
     description: 'Juicy beef patty, lettuce, tomato, onion, ketchup & mustard', 
     price: 500, 
     category: 'Burgers', 
-    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&q=80', 
     calories: 540, 
     rating: 4.5, 
     reviewCount: 890 
@@ -50,7 +50,7 @@ export const menuItems: MenuItem[] = [
     description: 'Beef patty, crispy bacon strips, BBQ sauce, caramelized onions', 
     price: 800, 
     category: 'Burgers', 
-    image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80', 
     calories: 850, 
     rating: 4.6, 
     reviewCount: 320 
@@ -61,7 +61,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crispy veggie patty, avocado, tomato, lettuce, herb mayo', 
     price: 550, 
     category: 'Burgers', 
-    image: 'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80', 
     calories: 480, 
     rating: 4.3, 
     reviewCount: 210 
@@ -75,7 +75,7 @@ export const menuItems: MenuItem[] = [
     price: 700, 
     originalPrice: 850, 
     category: 'Chicken', 
-    image: 'https://images.unsplash.com/photo-1626645738196-c2a7c8d08f58?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800&q=80', 
     badge: 'Bestseller', 
     calories: 720, 
     rating: 4.9, 
@@ -87,7 +87,7 @@ export const menuItems: MenuItem[] = [
     description: 'Fiery spiced chicken wings, served with blue cheese dip', 
     price: 650, 
     category: 'Chicken', 
-    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&q=80', 
     badge: 'Spicy', 
     isSpicy: true, 
     calories: 580, 
@@ -100,7 +100,7 @@ export const menuItems: MenuItem[] = [
     description: 'Tender chicken breast strips, golden fried, honey mustard dip', 
     price: 600, 
     category: 'Chicken', 
-    image: 'https://images.unsplash.com/photo-1562802378-063ec186a863?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1562802378-063ec186a863?w=600&q=80', 
     calories: 490, 
     rating: 4.6, 
     reviewCount: 780 
@@ -111,7 +111,7 @@ export const menuItems: MenuItem[] = [
     description: 'Chargrilled chicken breast, seasoned rice, coleslaw, garlic bread', 
     price: 900, 
     category: 'Chicken', 
-    image: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=600&q=80', 
     calories: 650, 
     rating: 4.5, 
     reviewCount: 340 
@@ -122,7 +122,7 @@ export const menuItems: MenuItem[] = [
     description: 'Bite-sized crispy chicken pieces, classic seasoning', 
     price: 450, 
     category: 'Chicken', 
-    image: 'https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=400&q=80', 
+    image: 'https://images.unsplash.com/photo-1585325701956-60dd9c8553bc?w=600&q=80', 
     badge: 'Value', 
     calories: 380, 
     rating: 4.4, 
@@ -137,7 +137,7 @@ export const menuItems: MenuItem[] = [
     price: 1400,
     originalPrice: 1800,
     category: 'Deals',
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=600&q=80',
     badge: 'Value',
     rating: 4.8,
     reviewCount: 540
@@ -149,7 +149,7 @@ export const menuItems: MenuItem[] = [
     price: 1100,
     originalPrice: 1300,
     category: 'Deals',
-    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80',
     badge: 'New',
     rating: 4.7,
     reviewCount: 280
@@ -160,7 +160,7 @@ export const menuItems: MenuItem[] = [
     description: '1 Zinger Burger, 1 Regular Fries, 1 Regular Drink',
     price: 750,
     category: 'Deals',
-    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=600&q=80',
     badge: 'Value',
     rating: 4.6,
     reviewCount: 420
@@ -172,7 +172,7 @@ export const menuItems: MenuItem[] = [
     price: 950,
     originalPrice: 1100,
     category: 'Deals',
-    image: 'https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?w=600&q=80',
     badge: 'Bestseller',
     rating: 4.7,
     reviewCount: 670
@@ -185,7 +185,7 @@ export const menuItems: MenuItem[] = [
     description: 'Signature golden fries, lightly salted and hot',
     price: 200,
     category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1573016608244-7d5fd1fb9fe8?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=800&q=80',
     calories: 450,
     rating: 4.5,
     reviewCount: 1300
@@ -196,7 +196,7 @@ export const menuItems: MenuItem[] = [
     description: 'Creamy cabbage and carrot salad in signature dressing',
     price: 150,
     category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=600&q=80',
     calories: 120,
     rating: 4.3,
     reviewCount: 450
@@ -207,7 +207,7 @@ export const menuItems: MenuItem[] = [
     description: 'Crispy batter-fried onion circles with dipping sauce',
     price: 250,
     category: 'Sides',
-    image: 'https://images.unsplash.com/photo-1639024471283-035188835118?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1601004176214-7f154446f251?w=800&q=80',
     calories: 320,
     rating: 4.4,
     reviewCount: 320
@@ -215,13 +215,13 @@ export const menuItems: MenuItem[] = [
 
   // DRINKS
   {
-    id: 'dr1',
-    name: 'Pepsi',
-    description: 'Refreshing chilled cola (500ml)',
-    price: 150,
-    category: 'Drinks',
-    image: 'https://images.unsplash.com/photo-1622483767028-3f66f3669091?w=400&q=80',
-    calories: 210,
+    id: 'dr1', 
+    name: 'Pepsi', 
+    description: 'Refreshing chilled cola (500ml)', 
+    price: 150, 
+    category: 'Drinks', 
+    image: 'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=800&q=80', 
+    calories: 210, 
     rating: 4.6,
     reviewCount: 890
   },
@@ -231,7 +231,7 @@ export const menuItems: MenuItem[] = [
     description: 'Cold pressed lemon juice with a hint of mint',
     price: 200,
     category: 'Drinks',
-    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&q=80',
     calories: 150,
     rating: 4.8,
     reviewCount: 230
@@ -242,7 +242,7 @@ export const menuItems: MenuItem[] = [
     description: 'Traditional creamy yogurt drink with sweet mango pulp',
     price: 250,
     category: 'Drinks',
-    image: 'https://images.unsplash.com/photo-1546173159-315724a31696?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1546173159-315724a31696?w=600&q=80',
     calories: 350,
     rating: 4.9,
     reviewCount: 150
@@ -253,7 +253,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pure drinking water (500ml)',
     price: 80,
     category: 'Drinks',
-    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80',
     calories: 0,
     rating: 4.4,
     reviewCount: 120
@@ -266,7 +266,7 @@ export const menuItems: MenuItem[] = [
     description: 'Warm, gooey chocolate brownie with fudge sauce',
     price: 300,
     category: 'Desserts',
-    image: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=600&q=80',
     calories: 450,
     rating: 4.8,
     reviewCount: 340
@@ -277,7 +277,7 @@ export const menuItems: MenuItem[] = [
     description: 'Creamy vanilla soft serve in a crunchy waffle cone',
     price: 150,
     category: 'Desserts',
-    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&q=80',
     calories: 250,
     rating: 4.6,
     reviewCount: 1200
@@ -288,7 +288,7 @@ export const menuItems: MenuItem[] = [
     description: 'Flaky pastry crust filled with hot spiced apples',
     price: 200,
     category: 'Desserts',
-    image: 'https://images.unsplash.com/photo-1535927842701-10a5184c948d?w=400&q=80',
+    image: 'https://images.unsplash.com/photo-1568571780765-9276ac4b7fcb?w=800&q=80',
     calories: 320,
     rating: 4.5,
     reviewCount: 180

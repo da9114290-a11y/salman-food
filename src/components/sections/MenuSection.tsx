@@ -278,6 +278,7 @@ export const MenuSection: React.FC = () => {
         <AnimatePresence>
           {flyItem && (
             <motion.div
+              key={flyItem.id}
               initial={{ 
                 position: 'fixed', 
                 left: flyItem.x, 

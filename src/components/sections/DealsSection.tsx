@@ -70,7 +70,7 @@ const HeroDeal = () => {
     price: 2500,
     originalPrice: 3300,
     category: 'Deals' as any,
-    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1606755456206-b25206cde27e?w=800&q=80',
     rating: 5,
     reviewCount: 99
   };
@@ -144,7 +144,7 @@ const deals = [
     price: 950,
     originalPrice: 1200,
     save: '20%',
-    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80'
   },
   {
     id: 'deal-2',
@@ -153,7 +153,7 @@ const deals = [
     price: 1100,
     originalPrice: 1450,
     save: '25%',
-    image: 'https://images.unsplash.com/photo-1626645738196-c2a7c8d08f58?w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800&q=80'
   },
   {
     id: 'deal-3',
@@ -162,7 +162,7 @@ const deals = [
     price: 750,
     originalPrice: 880,
     save: '15%',
-    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&q=80'
+    image: 'https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=600&q=80'
   }
 ];
 

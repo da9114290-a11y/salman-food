@@ -147,9 +147,9 @@ export const CartSidebar = () => {
                               </button>
                               
                               <div className="relative w-4 text-center overflow-visible">
-                                <AnimatePresence mode="popLayout">
+                                <AnimatePresence mode="wait">
                                   <motion.span
-                                    key={item.quantity}
+                                    key={`qty-${item.id}-${item.quantity}`} 
                                     initial={{ y: 10, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     exit={{ y: -10, opacity: 0 }}
@@ -168,7 +168,7 @@ export const CartSidebar = () => {
                                 <Plus size={12} />
                                 <AnimatePresence>
                                    <motion.span 
-                                     key={`plus-${item.id}-${item.quantity}`} 
+                                     key={`plus-${item.id}-${item.quantity}-${Math.random()}`} 
                                      initial={{ opacity: 1, y: 0 }}
                                      animate={{ opacity: 0, y: -20 }}
                                      className="absolute top-0 text-brand-red font-bold text-[10px] pointer-events-none"
