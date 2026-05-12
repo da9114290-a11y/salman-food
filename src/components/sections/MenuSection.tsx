@@ -267,7 +267,7 @@ export const MenuSection: React.FC = () => {
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
         >
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="wait">
             {filteredItems.map((item) => (
               <MenuCard key={item.id} item={item} onAdd={handleAddItem} />
             ))}

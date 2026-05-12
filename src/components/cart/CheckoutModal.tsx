@@ -28,6 +28,7 @@ interface CheckoutFormData {
 
 export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose }) => {
   const [step, setStep] = useState<CheckoutStep>(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { items, clearCart } = useCartStore();
   const totalPriceFormatted = selectTotalPrice(useCartStore.getState());
   const [orderId] = useState(() => `SF-${Math.floor(100000 + Math.random() * 900000)}`);
@@ -50,12 +51,61 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
     setStep(2);
   };
 
-  const placeOrder = () => {
-    setStep(3);
-    // In a real app, this would be an API call
-    setTimeout(() => {
-        clearCart();
-    }, 500);
+  const placeOrder = async () => {
+    setIsSubmitting(true);
+    try {
+      const orderDetails = {
+        customerName: getValues('fullName'),
+        customerPhone: getValues('phone'),
+        address: `${getValues('address')}, ${getValues('city')}`,
+        items: items.map(i => `${i.quantity}x ${i.name}`).join(', '),
+        total: grandTotal
+      };
+
+      const accessKey = (import.meta as any).env.VITE_WEB3FORMS_KEY;
+      if (!accessKey) {
+          console.error("VITE_WEB3FORMS_KEY is not defined");
+          alert("Error: Web3Forms access key is not set. Please set VITE_WEB3FORMS_KEY in your .env");
+          setIsSubmitting(false);
+          return;
+      }
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: accessKey,
+
+          // Your restaurant email
+          from_name: "Salman Food - New Order 🔔",
+          subject: `New Order from ${orderDetails.customerName}`,
+
+          // Order details (all appear in your email)
+          Customer_Name:    orderDetails.customerName,
+          Customer_Phone:   orderDetails.customerPhone,
+          Delivery_Address: orderDetails.address,
+          Items_Ordered:    orderDetails.items,
+          Total_Bill:       "Rs. " + orderDetails.total,
+          Order_Time:       new Date().toLocaleString('en-PK'),
+        })
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        alert("✅ Order placed! We will contact you soon.");
+        setStep(3);
+        setTimeout(() => {
+            clearCart();
+        }, 500);
+      } else {
+         alert("Failed to place order. Please try again.");
+      }
+    } catch (error) {
+       console.error("Order error", error);
+       alert("An error occurred while placing your order.");
+    } finally {
+       setIsSubmitting(false);
+    }
   };
 
   const handleFinalClose = () => {
@@ -386,9 +436,10 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose })
                         </div>
                         <button 
                             onClick={placeOrder}
-                            className="w-full bg-brand-yellow hover:bg-brand-yellow-hover text-brand-dark py-5 rounded-card font-heading font-black uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 active:scale-95"
+                            disabled={isSubmitting}
+                            className={`w-full ${isSubmitting ? 'bg-brand-yellow/70 cursor-not-allowed' : 'bg-brand-yellow hover:bg-brand-yellow-hover'} text-brand-dark py-5 rounded-card font-heading font-black uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2 active:scale-95`}
                         >
-                            Place Order Now
+                            {isSubmitting ? 'Placing Order...' : 'Place Order Now'}
                         </button>
                     </div>
                 )}

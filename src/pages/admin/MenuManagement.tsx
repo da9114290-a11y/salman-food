@@ -78,7 +78,7 @@ export const AdminMenuManagement: React.FC = () => {
     if (editingItem) {
       setItems(items.map(item => item.id === editingItem.id ? { ...item, ...formData as MenuItem } : item));
     } else {
-      setItems([{ ...formData as MenuItem, id: Date.now().toString() }, ...items]);
+      setItems([{ ...formData as MenuItem, id: crypto.randomUUID() }, ...items]);
     }
     setIsEditModalOpen(false);
   };
